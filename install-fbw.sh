@@ -1,5 +1,7 @@
 #!/bin/zsh
 curl -sL https://raw.githubusercontent.com/fbrzostowski/fbw-setup/main/ascii-art.txt
+echo "FWB: Firmowa Baza Wiedzy"
+echo "=======vr.0.0.1========="
 echo "Czy chcesz dodac alias?"
 echo -n "[y/n]: "
 read continue < /dev/tty
