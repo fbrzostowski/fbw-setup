@@ -7,9 +7,7 @@ continue=""
 read $continue
 if [ "$continue" == "y" ]; then
   alias fbw="ssh demo@192.168.1.137"
-  echo 
-elif [ "$continue" == "n" ]; then
-  echo "przerwano."
+  echo "Zrestartuj terminal, aby przeladowac sesje shell'a ;)"
 else
-  echo "nieprawidlowa opcja [y/n]: $continue"
+  echo "Przerywam..."
 fi
