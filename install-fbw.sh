@@ -1,13 +1,13 @@
+#!/bin/zsh
 echo "FBW - Firmowa Baza Wiedzy"
 echo "Prototyp"
 echo "================"
-echo "czy chcesz dodac alias?"
+echo "Czy chcesz dodac alias?"
 echo -n "[y/n]: "
-continue=""
-read $continue
-if [ "$continue" == "y" ]; then
-  alias fbw="ssh demo@192.168.1.137"
-  echo "Zrestartuj terminal, aby przeladowac sesje shell'a ;)"
+read continue
+if [ "$continue" = "y" ]; then
+  echo 'alias fbw="ssh demo@192.168.1.137"' >> ~/.zshrc
+  echo "Wpisz 'source ~/.zshrc' lub zrestartuj terminal"
 else
   echo "Przerywam..."
 fi
